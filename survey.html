@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>
+    Анкета
+    </title>
+    </head>
+    <body>
+      <section id="header">
+        <div>
+            <h1 id="title">
+            <img src="cart.png" alt="logo" width="80" height="80">
+           Everything tech
+            </h1>
+        </div>
+            <div>
+            <ul id="meni">
+                <li>
+                    <a href="index.html" class="open" id="logo">Дома</a>
+                </li>
+                <li>
+                    <a href="products.html">Производи</a>
+                </li>
+                <li>
+                    <a href="survey.html">Анкета</a>
+                </li>
+                <li>
+                    <a href="contact.html">Контакт</a>
+                </li>
+                <li>
+                    <a href="login.html">Најава</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+        <section id="body">
+            <div>
+                <h1 id="title">Анкета за вашите искуства</h1>
+                <p id="form">Ве молиме опишете како вашето искуство беше купувањето со нас денес. Оваа повратна информација е многу важна за нас и би била високо ценета!</p></div>
+                
+                <form action="submit-survey-form" id="survey-form">
+                  
+                  <div class="form">
+                  <div id="form">
+                  <label id="name-label" for="name">Име</label>
+                  <input type="text" id="name" placeholder="Внесете Име" required>
+                  </div>
+                  
+                  <div id="form">
+                  <label id="email-label" for="email">Email</label>
+                  <input type="email" id="email" placeholder="Внесете email" required>
+                  </div>
+                  
+                  <div id="form">
+                  <label id="number-label" for="number">Возраст</label>
+                  <input type="number" id="number" min="1" max="100" placeholder="Number">
+                  </div>
+                  
+                  <div id="form">
+                    <label for="dropdown">Дали е ова вашата прва посета?</label>
+                  <select id="dropdown">
+                  <option value="Да">Да</option>
+                  <option value="Не">Не</option>
+                    </select>
+                  </div>
+                  
+                  <div id="form">
+                  <label for="satisfaction">Колку сте задоволни од вашата посета?</label><br>
+                  <label for="very satisfied"> 
+                  <input id="very-satisifed" type="radio" name="satisfaction" value="Многу задоволен">Многу задоволен
+                </label>
+                  <label for="satisfied"> 
+                  <input id="satisifed" type="radio" name="satisfaction" value="задоволен">задоволен
+                </label>
+                  <label for="neutral"> 
+                  <input id="neutral" type="radio" name="satisfaction" value="Неутрален">Неутрален
+                </label>
+                  <label for="dissatisfied"> 
+                  <input id="dissatisifed" type="radio" name="satisfaction" value="Незадоволен">Незадоволен
+                </label>
+                  <label for="very dissatisfied"> 
+                  <input id="very-dissatisifed" type="radio" name="satisfaction" value="Многу Незадоволен">Многу Незадоволен
+                </label>
+                  </div>
+                  
+                  <div id="form">
+                <label for="reason">Што ве донесе во нашата продавница?</label><br>
+                <input type="checkbox" name="reason1" value="Пријател"> Пријател ми кажа,<br>
+                <input type="checkbox" name="reason2" value="реклама"> Видов реклама.<br>
+                <input type="checkbox" name="reason3" value="Социална мреќа"> Дознав на Социална мрежа<br>
+                <input type="checkbox" name="reason4" value="посетител"> Обично пазарам во продавницата.<br>
+                <input type="checkbox" name="reason5" value="друго"> Друго:<br>
+                  </div>
+                  
+                  <div id="form">
+                 <label for="comment">Додатни Коментари:</label><br>
+                 <textarea rows="4" cols="50" name="Коментари" form="usrform">
+                </textarea>
+                  </div><br>
+                    
+                  
+                    <button class="button" type="submit">Submit Survey</button>
+                  
+                  </div>
+                  
+                </form>
+            </section>
+    <section id="footer">
+        <div class="div">
+            <p>&copy; 2023 Everything tech. All rights reserved.</p>
+        </div>
+    </section>
+    </body>
+</html>

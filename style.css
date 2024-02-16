@@ -1,0 +1,37 @@
+#header{background-color: lightgrey;padding: 3px;}
+#meni{display: flex;align-items: left;justify-content:left;list-style: none;}
+#meni li{padding: 0 10px;}
+#meni li a{text-decoration: none;font-size: medium;color: black;font-weight: 500;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+#meni a:hover{color: blue;}
+#ime{margin-left: 500px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+.div{text-align: center;background-color: lightgrey;padding: 15px;}
+#body{background-color: aqua;padding-top: 8px;}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#naslovna{text-align: center;font-family:Verdana, Geneva, Tahoma, sans-serif}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 42vw;
+}
+#title {
+    font-family: 'Questrial', sans-serif;
+    font-size: 35px; 
+    text-align: center;
+  }
+  #center{text-align: center;
+          font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Производи</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div>
+            <h1 id="title">
+            <img src="cart.png" alt="logo" width="80" height="80">
+           Everything tech
+            </h1>
+        </div>
+            <div>
+            <ul id="meni">
+                <li>
+                    <a href="index.html" class="open" id="logo">Дома</a>
+                </li>
+                <li>
+                    <a href="products.html">Производи</a>
+                </li>
+                <li>
+                    <a href="survey.html">Анкета</a>
+                </li>
+                <li>
+                    <a href="contact.html">Контакт</a>
+                </li>
+                <li>
+                    <a href="login.html">Најава</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="body">
+        <div id="k1">
+            <h1>Категорија 1:Компјутери</h1>
+            <table>
+                <tr>
+                    <td>
+                        <h4>Acer Predator Orion 3000</h4>
+                        <ul>
+                            <li>Процесор: 2.9GHz Intel Core i7-10700</li>
+                            <li>Графичка картичка: Nvidia GeForce RTX 2060 6GB</li>
+                            <li>RAM: 16GB 2,666MHz DDR 4</li>
+                            <li>Меморија: 512GB WD SN530 NVMe SSD, 1TB Toshiba DT01ACA hard disk</li>
+                            <li>Порти: 5 x USB 3.2 Gen 2, 1 x USB 3.2 Gen 2 Type-C, 5 x audio</li>
+                            <li>Конекција: Dual-band 802.11ax WiFi, Gigabit Ethernet<br>                    
+                            Димензија: 392 x 386 x 175mm<br>
+                            Гаранција: 1 година<br>
+                            </li>
+                        </ul>
+                        <a href="https://www.techadvisor.com/article/721920/acer-predator-orion-3000-review.html">
+                            <img src="pc1.jpg" height="250px" width="250px">
+                        </a>
+                        <button onclick="likeProduct('AcerPredatorOrion3000')">Like</button>
+                        <span id="likeCounter-AcerPredatorOrion3000">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-AcerPredatorOrion3000" placeholder="Внесете Коментар">
+                        <button onclick="addComment('AcerPredatorOrion3000')">Коментирај</button>
+                        <div id="comments-AcerPredatorOrion3000"></div>
+                        <p>$1.199</p>
+                    </td>
+                    <td>
+                        <h4>Acer Nitro N50-610</h4>
+                        <ul>
+                            <li>Процесор: 2.9GHz Intel Core i5-10400F<br></li>
+                            <li>Графичка картичка: Nvidia GeForce GTX 1660 Super 6GB</li>
+                            <li>RAM: 8GB 2,666MHz DDR4</li>
+                            <li>Меморија: 512GB Kingston RBUSNS8154P3256GJ1 SSD, 1TB Western Digital Blue hard disk</li>
+                            <li>Порти: 5 x USB 3.2 Gen 2, 1 x USB 3.2 Gen 2 Type-C, 5 x audio</li>
+                            <li>Конекција: Dual-band 802.11ax WiFi, Gigabit Ethernet</li>
+                            <li>Димензија: 392 x 386 x 175mm</li>
+                            <li>Тежина: 10kg Warranty: 1yr RTB</li>
+                        </ul>
+                        <a href="https://www.techadvisor.com/article/721744/acer-nitro-n50-610-review.html">
+                            <img src="pc2.jpg" height="250px" width="250px">
+                        </a>
+                        <button onclick="likeProduct('AcerNitroN50-610')">Like</button>
+                        <span id="likeCounter-AcerNitroN50-610">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-AcerNitroN50-610" placeholder="Внесете Коментар">
+                        <button onclick="addComment('AcerNitroN50-610')">Коментирај</button>
+                        <div id="comments-AcerNitroN50-610"></div>
+                        <p>$700</p>
+                    </td>
+                    <td>
+                        <h4>MSI Trident A</h4>
+                        <ul>
+                            <li>Процесор: 2.9GHz Intel Core i5-9400F</li>
+                            <li>Графичка картичка: Nvidia GeForce RTX 2060 6GB</li>
+                            <li>RAM: 16GB 2,666MHz DDR4</li>
+                            <li>Меморија: 256GB Samsung PM981 SSD, 1TB hard disk</li>
+                            <li>Порти: 5 x USB 3.1 Gen 1,1 x USB 3.1 Type-C, 2 x USB 2, 1 x Gigabit Ethernet, 1 x PS/2, 5 x audio</li>
+                            <li>Конекција: Dual-band 802.11ac, Gigabit Ethernet, Bluetooth 5.0</li>
+                            <li>Димензија: 130 x 383 x 396mm (WxDxH)</li>
+                            <li>Тежина: 6.6kg</li>
+                        </ul>
+                        <a href="https://www.techadvisor.com/article/720770/msi-trident-a-9th-review.html">
+                            <img src="pc3.jpg" height="250px" width="250px">
+                        </a>
+                        <button onclick="likeProduct('MSITridentA')">Like</button>
+                        <span id="likeCounter-MSITridentA">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-MSITridentA" placeholder="Внесете Коментар">
+                        <button onclick="addComment('MSITridentA')">Коментирај</button>
+                        <div id="comments-MSITridentA"></div>
+                        <p>$700</p>
+                        <p>$1.000</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h1>Категорија 2:Лаптопи</h1>
+        <div id="k2">
+            <table>
+                <tr>
+                    <td>
+                        <h4>Dell XPS 15 (9530) </h4>
+                        <ul>
+                            <li>
+                                Процесор:Intel Core i7-13700H
+                            </li>
+                            <li>
+                                RAM:32 GB
+                            </li>
+                            <li>
+                                Меморија:1 TB SSD
+                            </li>
+                            <li>
+                                Димензија на екран:	15.6 инчи
+                            </li>
+                            <li>
+                                Тежина:4.2 lbs
+                            </li>
+                            <li>
+                                Траење на батерија:14h 03m
+                            </li>
+                        </ul>
+                        <a href="https://www.pcmag.com/reviews/dell-xps-15-9530-2023">
+                            <img src="laptop1.jpg" height="250 px" width="250px">
+
+                        </a>
+                        <button onclick="likeProduct('DellXPS15(9530)')">Like</button>
+                        <span id="likeCounter-DellXPS15(9530)">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-DellXPS15(9530)" placeholder="Внесете Коментар">
+                        <button onclick="addComment('DellXPS15(9530)')">Коментирај</button>
+                        <div id="comments-DellXPS15(9530)"></div>
+                        <p>$900</p>
+                    </td>
+                    <td>
+                        <h4>Apple MacBook Pro 16-Inch</h4>
+                        <li>
+                            Процесор:Apple M2 Max
+                        </li>
+                        <li>
+                            RAM:16 GB
+                        </li>
+                        <li>
+                            Меморија:4 TB SSD
+                        </li>
+                        <li>
+                            Димензија на екран:	16.2 инчи
+                        </li>
+                        <li>
+                            Тежина:4.8 lbs
+                        </li>
+                        <li>
+                            Траење на батерија:26h 51m
+                        </li>
+                    </ul>
+                    <a href="https://www.pcmag.com/reviews/apple-macbook-pro-16-inch-2023-m2-max">
+                        <img src="laptop2.jpg" height="250 px" width="250px">
+
+                    </a>
+                    <button onclick="likeProduct('AppleMacBookPro16-Inch')">Like</button>
+                        <span id="likeCounter-AppleMacBookPro16-Inch">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-AppleMacBookPro16-Inch" placeholder="Внесете Коментар">
+                        <button onclick="addComment('AppleMacBookPro16-Inch')">Коментирај</button>
+                        <div id="comments-AppleMacBookPro16-Inch"></div>
+                    <p>$1.500</p>
+                    </td>
+                    <td>
+                        <h4>Microsoft Surface Pro 9</h4>
+                        <li>
+                            Процесор:Intel Core i7-1255U
+
+                        </li>
+                        <li>
+                            RAM:16 GB
+                        </li>
+                        <li>
+                            Меморија:256 GB SSD
+                        </li>
+                        <li>
+                            Димензија на екран:	13 инчи
+                        </li>
+                        <li>
+                            Тежина:1.9 lbs
+                        </li>
+                        <li>
+                            Траење на батерија:13h 12m
+                        </li>
+                    </ul>
+                    <a href="https://www.pcmag.com/reviews/microsoft-surface-pro-9-intel">
+                        <img src="laptop3.jpg" height="250 px" width="250px">
+
+                    </a>
+                    <button onclick="likeProduct('IntelCorei7-1255U')">Like</button>
+                        <span id="likeCounter-IntelCorei7-1255U">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-IntelCorei7-1255U" placeholder="Внесете Коментар">
+                        <button onclick="addComment('IntelCorei7-1255U')">Коментирај</button>
+                        <div id="comments-IntelCorei7-1255U"></div>
+                    <p>$500</p>
+                    
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="k3">
+            <h1>Категорија 3:Телефони</h1>
+            <table>
+                <tr>
+                    <td>
+                        <h4>Xiaomi Poco F5</h4>
+                        <ul>
+                            <li>
+                                Димензии:161.1 x 75 x 7.9 mm
+                            </li>
+                            <li>
+                                Тежина:181 g
+                            </li>
+                            <li>
+                                Меморија:256 GB
+                            </li>
+                            <li>
+                                екран:AMOLED, 68B colors, Dolby Vision, HDR10+, 120Hz, 500 nits (typ), 1000 nits (peak)
+                            </li>
+                            <li>
+                                Оперативен Систем:Android 13, MIUI 14 for POCO
+                            </li>
+                            <li>
+                                батерија:Li-Po 5000 mAh, non-removable
+                            </li>
+                        </ul>
+                        <a href="https://www.gsmarena.com/xiaomi_poco_f5-12258.php">
+                            <img src="phone1.jpg" height="250 px" width="250px">
+
+                        </a>
+                        <button onclick="likeProduct('XiaomiPocoF5')">Like</button>
+                        <span id="likeCounter-XiaomiPocoF5">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-XiaomiPocoF5" placeholder="Внесете Коментар">
+                        <button onclick="addComment('XiaomiPocoF5')">Коментирај</button>
+                        <div id="comments-XiaomiPocoF5"></div>
+                        <p>$350</p>
+                    </td>
+                    <td>
+                        <h4>Samsung Galaxy S23 Ultra</h4>
+                        <li>
+                            Димензии:163.4 x 78.1 x 8.9 mm
+                        </li>
+                        <li>
+                            Тежина:234 g
+                        </li>
+                        <li>
+                            Меморија:256 GB
+                        </li>
+                        <li>
+                            екран:Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak)
+                        </li>
+                        <li>
+                            Оперативен Систем:Android 13, upgradable to Android 14, One UI 6
+                        </li>
+                        <li>
+                            батерија:Li-Ion 5000 mAh, non-removable
+                    </ul>
+                    <a href="https://www.gsmarena.com/samsung_galaxy_s23_ultra_long_term-review-2626.php">
+                        <img src="phone2.jpg" height="250 px" width="250px">
+
+                    </a>
+                    <button onclick="likeProduct('SamsungGalaxyS23Ultra')">Like</button>
+                        <span id="likeCounter-SamsungGalaxyS23Ultra">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-SamsungGalaxyS23Ultra" placeholder="Внесете Коментар">
+                        <button onclick="addComment('SamsungGalaxyS23Ultra')">Коментирај</button>
+                        <div id="comments-SamsungGalaxyS23Ultra"></div>
+                    </td>
+                    <td>
+                        <h4>Apple iPhone 15</h4>
+                        <li>
+                            Димензии:147.6 x 71.6 x 7.8 mm
+                        </li>
+                        <li>
+                            Тежина:171 g
+                        </li>
+                        <li>
+                            Меморија:128 GB
+                        </li>
+                        <li>
+                            екран:Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak)
+                        </li>
+                        <li>
+                            Оперативен Систем:iOS 17, upgradable to iOS 17.1.1
+                        </li>
+                        <li>
+                            батерија:Li-Ion 3349 mAh, non-removable
+                    </ul>
+                    <a href="https://www.gsmarena.com/apple_iphone_15-review-2619.php">
+                        <img src="phone3.jpg" height="250 px" width="250px">
+
+                    </a>
+                    <button onclick="likeProduct('AppleiPhone15')">Like</button>
+                        <span id="likeCounter-AppleiPhone15">likes: 0</span>
+                        <p>Коментари</p>
+                        <input type="text" id="comment-AppleiPhone15" placeholder="Внесете Коментар">
+                        <button onclick="addComment('AppleiPhone15')">Коментирај</button>
+                        <div id="comments-AppleiPhone15"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1 id="form">Форма за Нарачка</h1>
+            <form action="order">
+                <div id="form">
+                    <label for="ime">Име:</label>
+                    <input type="text" placeholder="Внесете Име" required>
+                </div>
+                <div id="form">
+                    <label for="prezime">Презиме</label>
+                    <input type="text" placeholder="внесете презиме">
+                </div>
+                    <div id="form">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    </div>
+                    <div id="form">
+                        <label for="tel">Број на телефен:</label>
+                        <input type="tel" placeholder="Enter a number" pattern="[0-9]*" inputmode="numeric" required>
+                    </div>
+                    <div id="form">
+                        <label for="adresa">Адреса:</label>
+                        <input type="text" placeholder="Адреса" required>
+                    </div>
+                    <div id="form">
+                        <label for="broj">Број на картичка:</label>
+                        <input type="text" placeholder="Број на картичка" required>
+                        <div id="form">
+                        <label for="kolicina">Количина:</label>
+                        <input type="number" required>
+                        </div>
+                    </div>
+                    <div id="form">
+                        <p>
+                            Изберете Производ
+                        </p>
+                        <label for="Производ" Изберете производ></label>
+                        <select id="proizvodi" name="p">
+                            <option value="Acer Predator Orion 3000">Acer Predator Orion 3000</option>
+                            <option value="Acer Nitro N50-610">Acer Nitro N50-610</option>
+                            <option value="MSI Trident A">MSI Trident A</option>
+                            <option value="Dell XPS 15 (9530)">Dell XPS 15 (9530)</option>
+                            <option value="Apple MacBook Pro 16-Inch">Apple MacBook Pro 16-Inch</option>
+                            <option value="Microsoft Surface Pro 9">Microsoft Surface Pro 9</option>
+                            <option value="Xiaomi Poco F5">Xiaomi Poco F5</option>
+                            <option value="Samsung Galaxy S23 Ultra">Samsung Galaxy S23 Ultra</option>
+                            <option value="Apple iPhone 15">Apple iPhone 15</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br><br>
+                        <button type="submit" class="button">Нарачај</button>
+                    </div>
+        </div>
+    </form>
+        </section>
+        <section id="footer">
+            <div class="div">
+                <p>&copy; 2023 Everything tech. All rights reserved.</p>
+            </div>
+        </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
